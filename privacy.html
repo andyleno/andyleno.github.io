@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>George privacy policy</title>
+<style>
+  body { font: 17px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 40rem;
+         margin: 3rem auto; padding: 0 1rem; color: #1d1d1f; background: #fff; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>George privacy policy</h1>
+<p>Last updated: 12 November 2026</p>
+
+<p>George is a personal voice assistant used by one person, its owner, on their own computer.
+This policy explains what George does with Google user data.</p>
+
+<h2>What George accesses</h2>
+<p>Only the owner's Google Calendar events, through the Google Calendar API, using the
+<code>calendar.events</code> permission the owner grants when signing in. George reads events so
+it can answer questions such as "what's on tomorrow?", and creates or updates events when the
+owner asks. Every change is read back to the owner and only made after they say yes.</p>
+
+<h2>How it's used</h2>
+<p>Calendar details are used only to answer the owner's own requests. To understand a request
+and reply by voice, the relevant event details are sent to the AI services George is built on:
+Anthropic (Claude), which works out the answer, and ElevenLabs, which speaks it. They are not
+used for advertising, sold, or shared with anyone else, and no person reads them.</p>
+
+<h2>Storage</h2>
+<p>The Google sign-in token is stored on the owner's computer in a file only their user account
+can read. George does not keep a copy of the calendar; it reads events from Google when asked.</p>
+
+<h2>Google API Services User Data Policy</h2>
+<p>George's use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access</h2>
+<p>The owner can disconnect George at any time. <code>george calendar logout google</code>
+deletes the stored token from their computer, and removing George at
+<a href="https://myaccount.google.com/permissions">Google Account → Third-party connections</a>
+revokes its access at Google.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy:
+<a href="https://github.com/andyleno/andyleno.github.io/issues">open an issue on GitHub</a>.</p>
+</body>
+</html>
